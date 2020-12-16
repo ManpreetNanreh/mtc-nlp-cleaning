@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:DB="http://DB">
-  <DB:Table name="ETLTable" columns="/1 /2 /3 /4"/>
-  <DB:Column name="id" value="2"/>
-  <DB:Column name="data" value="A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth."/>
-  <DB:Column name="tokens" value="Sequence {'small', 'river', 'named', 'duden', 'flows', 'by', 'their', 'place', 'and', 'supplies', 'it', 'with', 'necessary', 'regelialia.', 'it', 'paradisematic', 'country,', 'which', 'roasted', 'parts', 'of', 'sentences', 'fly', 'into', 'your', 'mouth.'}"/>
-  <DB:Column name="stopWordsRemovedTokens" value="Sequence {'a', 'small', 'river', 'named', 'duden', 'flows', 'by', 'their', 'place', 'and', 'supplies', 'it', 'with', 'the', 'necessary', 'regelialia.', 'it', 'is', 'a', 'paradisematic', 'country,', 'in', 'which', 'roasted', 'parts', 'of', 'sentences', 'fly', 'into', 'your', 'mouth.'}"/>
-</xmi:XMI>
