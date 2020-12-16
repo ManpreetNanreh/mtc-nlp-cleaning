@@ -170,7 +170,7 @@ public class MTC {
 		 * CHANGE THESE VALUES TO THEIR APPROPRIATE PATH OR FILE NAME
 		 */
 		// Define the path for the input xmi file
-		String inFileName = "xmi/CleanedData.xmi";
+		String inFileName = "xmi/UncleanedData.xmi";
 		// Define the path to project and transformations
 		String transformationPath = "C:\\Users\\Home\\eclipse-workspace\\nlp-atl-transformations\\";
 		
@@ -193,7 +193,7 @@ public class MTC {
 			// the data is clean and can be put into database format.
 			System.out.println("Performing To Database Transformation");
 			try {
-				runATLTransformation("model/DataModel.ecore", "model/Database.ecore", "xmi/result/StopWordsRemoved.xmi", "xmi/result/Database.xmi", transformationPath+"ToDatabase.asm", "MM", "MM1");
+				runATLTransformation("model/DataModel.ecore", "model/Database.ecore", inFileName, "xmi/result/Database.xmi", transformationPath+"ToDatabase.asm", "MM", "MM1");
 			} catch (Exception e) {
 				System.out.println("The transformation broke due to the following error:");
 				System.out.println(e.getLocalizedMessage());
