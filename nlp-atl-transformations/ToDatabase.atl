@@ -1,0 +1,35 @@
+-- @path MM=/nlp-models/model/DataModel.ecore
+-- @path MM1=/nlp-models/model/Database.ecore
+
+-- This transformation will store the cleaned data into the database model.
+
+module ToDatabase;
+create OUT : MM1 from IN : MM;
+
+rule ToDatabase {
+	from
+		Data : MM!DataClass
+	using{
+			cols : Sequence(MM1!Column) = Sequence{};
+		}
+	to
+		DB : MM1!Table (
+			name <- 'ETLTable',
+			columns <- Sequence{thisModule.createColumn('id', Data.id.toString()),
+								thisModule.createColumn('data', Data.data),
+								thisModule.createColumn('tokens', Data.tokens.toString()),
+								thisModule.createColumn('stopWordsRemovedTokens', Data.stopWordTokens.toString())
+			}
+		)
+}
+
+lazy rule createColumn {
+	from
+		colName : String,
+		colValue : String
+	to
+		column : MM1!Column (
+			name <- colName,
+			value <- colValue
+		)
+}

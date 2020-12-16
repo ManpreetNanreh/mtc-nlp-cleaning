@@ -1,0 +1,28 @@
+-- @path MM=/nlp-models/model/DataModel.ecore
+-- @path MM1=/nlp-models/model/DataModel.ecore
+
+-- This transformation will remove stop words from the tokenized data. Stop word removal can be defined in many ways.
+
+module TokensToStopWords;
+create OUT : MM1 from IN : MM;
+
+rule TokensToStopWords {
+	from
+		Tokens : MM!DataClass
+	to
+		StopWords : MM1!DataClass (
+			id <- Tokens.id,
+			data <-Tokens.data,
+			tokens <- Tokens.tokens,
+			stopWordTokens <- Tokens.tokens -> select(s | not s.equalsIgnoreCase('a') and
+															not s.equalsIgnoreCase('is') and 
+															not s.equalsIgnoreCase('the') and
+															not s.equalsIgnoreCase('in') and
+															not s.equalsIgnoreCase('for') and
+															not s.equalsIgnoreCase('where') and
+															not s.equalsIgnoreCase('to') and
+															not s.equalsIgnoreCase('at')),
+			isCleaned <- true
+		)
+}
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DM:DataClass
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:DM="http://DM"
+    xsi:schemaLocation="http://DM ../model/DataModel.ecore"
+    id="2" data="A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth."
+    isCleaned="true">
+  <tokens>small</tokens>
+  <tokens>river</tokens>
+  <tokens>named</tokens>
+  <tokens>duden</tokens>
+  <tokens>flows</tokens>
+  <tokens>by</tokens>
+  <tokens>their</tokens>
+  <tokens>place</tokens>
+  <tokens>and</tokens>
+  <tokens>supplies</tokens>
+  <tokens>it</tokens>
+  <tokens>with</tokens>
+  <tokens>necessary</tokens>
+  <tokens>regelialia.</tokens>
+  <tokens>it</tokens>
+  <tokens>paradisematic</tokens>
+  <tokens>country,</tokens>
+  <tokens>which</tokens>
+  <tokens>roasted</tokens>
+  <tokens>parts</tokens>
+  <tokens>of</tokens>
+  <tokens>sentences</tokens>
+  <tokens>fly</tokens>
+  <tokens>into</tokens>
+  <tokens>your</tokens>
+  <tokens>mouth.</tokens>
+  <stopWordTokens>a</stopWordTokens>
+  <stopWordTokens>small</stopWordTokens>
+  <stopWordTokens>river</stopWordTokens>
+  <stopWordTokens>named</stopWordTokens>
+  <stopWordTokens>duden</stopWordTokens>
+  <stopWordTokens>flows</stopWordTokens>
+  <stopWordTokens>by</stopWordTokens>
+  <stopWordTokens>their</stopWordTokens>
+  <stopWordTokens>place</stopWordTokens>
+  <stopWordTokens>and</stopWordTokens>
+  <stopWordTokens>supplies</stopWordTokens>
+  <stopWordTokens>it</stopWordTokens>
+  <stopWordTokens>with</stopWordTokens>
+  <stopWordTokens>the</stopWordTokens>
+  <stopWordTokens>necessary</stopWordTokens>
+  <stopWordTokens>regelialia.</stopWordTokens>
+  <stopWordTokens>it</stopWordTokens>
+  <stopWordTokens>is</stopWordTokens>
+  <stopWordTokens>a</stopWordTokens>
+  <stopWordTokens>paradisematic</stopWordTokens>
+  <stopWordTokens>country,</stopWordTokens>
+  <stopWordTokens>in</stopWordTokens>
+  <stopWordTokens>which</stopWordTokens>
+  <stopWordTokens>roasted</stopWordTokens>
+  <stopWordTokens>parts</stopWordTokens>
+  <stopWordTokens>of</stopWordTokens>
+  <stopWordTokens>sentences</stopWordTokens>
+  <stopWordTokens>fly</stopWordTokens>
+  <stopWordTokens>into</stopWordTokens>
+  <stopWordTokens>your</stopWordTokens>
+  <stopWordTokens>mouth.</stopWordTokens>
+</DM:DataClass>

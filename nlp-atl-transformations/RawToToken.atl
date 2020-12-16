@@ -1,0 +1,20 @@
+-- @path MM=/nlp-cleaning/model/DataModel.ecore
+-- @path MM1=/nlp-cleaning/model/DataModel.ecore
+
+-- This transformation will convert Raw NLP data into Tokenized NLP data.
+
+module RawToTokens;
+create OUT : MM1 from IN : MM;
+
+rule RawToTokens {
+	from
+		Raw : MM!DataClass
+	to 
+		Tokens : MM1!DataClass (
+			id <- Raw.id,
+			data <- Raw.data,
+			tokens <- Raw.data.toLower().trim().split(' '),
+			stopWordTokens <- Raw.stopWordTokens,
+			isCleaned <- Raw.isCleaned
+		)
+}
